@@ -34,7 +34,7 @@ jobs:
             cd App_manifest
             pwd
             echo $TAG
-            sed -i "s/build-.*/build-$TAG/g" manifest/deployment.yaml
+            sed -i "s/build-.*/build-$TAG/g" manifest/deployment.yml
             cat manifest/deployment.yaml
             git add .
             git commit -m "new build with imgTag build-$TAG"
